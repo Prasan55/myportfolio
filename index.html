@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prasanna Karki | Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
 </head>
 
 <body>
@@ -76,47 +77,65 @@
                 <dd>Used for storing and managing application data.</dd>
             </dl>
         </section>
+        <section id="projects" class="projects-section">
+    <h2>Projects</h2>
 
-        <section id="projects">
-            <h2>Projects</h2>
+    <div class="project-carousel" aria-label="Project showcase">
+        <div class="project-viewport">
+            <div class="project-track">
 
-            <article>
-                <h3>AI Short Ad Generator</h3>
-
-                <p>
-                    A full-stack application that generates short advertisements
-                    using AI. The project uses Django REST Framework for the
-                    backend, React for the frontend, Gemini for generating ad
-                    scenes, and video processing tools for creating the final
-                    video.
-                </p>
-
-                <p>
-                    <a href="https://github.com/Prasan55" target="_blank"
+                <article class="project-slide">
+                    <h3>AI Short Ad Generator</h3>
+                    <p>
+                        A full-stack application that generates short
+                        advertisements using AI. It uses Django REST
+                        Framework, React, Gemini, and video processing tools.
+                    </p>
+                    <a href="https://github.com/Prasan55"
+                       target="_blank"
                        rel="noopener noreferrer">
                         View Repository
                     </a>
-                </p>
-            </article>
+                </article>
 
-            <article>
-                <h3>Real-Time Chat Application</h3>
-
-                <p>
-                    A real-time chat application built with Django Channels,
-                    Django REST Framework, React, and WebSockets. The project
-                    supports real-time messaging and user notifications.
-                </p>
-
-                <p>
-                    <a href="https://github.com/Prasan55" target="_blank"
+                <article class="project-slide">
+                    <h3>Real-Time Chat Application</h3>
+                    <p>
+                        A real-time chat application built with Django
+                        Channels, Django REST Framework, React, and
+                        WebSockets. It supports real-time messaging
+                        and user notifications.
+                    </p>
+                    <a href="https://github.com/Prasan55"
+                       target="_blank"
                        rel="noopener noreferrer">
                         View Repository
                     </a>
-                </p>
-            </article>
+                </article>
 
-        </section>
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-prev"
+                    type="button"
+                    aria-label="Previous project">
+                &#8592;
+            </button>
+
+            <div class="carousel-dots"
+                 aria-label="Choose a project"></div>
+
+            <button class="carousel-next"
+                    type="button"
+                    aria-label="Next project">
+                &#8594;
+            </button>
+        </div>
+
+        <p class="carousel-status" aria-live="polite"></p>
+    </div>
+</section>
 
         <section id="contact">
             <h2>Contact Me</h2>
